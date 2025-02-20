@@ -1,11 +1,7 @@
-import matplotlib.pyplot as plt
-import matplotlib.patches as patches
-
 from itertools import permutations, combinations
 import numpy as np
 import dionysus as d
-import gudhi as gd
-from gudhi import AlphaComplex
+rng = np.random.default_rng(seed=42) #optional
 
 def random_subarray(array, d):
     '''For given array n x k, return subarray d x k'''
