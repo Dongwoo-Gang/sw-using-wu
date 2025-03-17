@@ -38,7 +38,6 @@ def farthest_subarray(arr: np.ndarray, m: int) -> np.ndarray:
     n, d = arr.shape
     assert m <= n, "m should be less than or equal to n"
     
-    # Randomly select the first index
     first_idx = np.random.randint(0, n)
     selected_indices = [first_idx]
     
